@@ -31,7 +31,7 @@ public class ShapeCollectorTestSuite {
         //Then
         Assert.assertEquals(square ,shapeColl.getFigure(0));
     }
-    
+
     @Test
     public void testRemoveShape() {
         //Given
@@ -41,7 +41,7 @@ public class ShapeCollectorTestSuite {
         shapeColl.addFigure(square);
         shapeColl.removeFigure(0);
         //Then
-        Assert.assertEquals(shapeColl.getColl().isEmpty(),true );
+        Assert.assertEquals(true ,shapeColl.getColl().isEmpty());
     }
 }
 
