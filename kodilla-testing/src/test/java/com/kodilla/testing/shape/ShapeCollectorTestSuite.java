@@ -1,6 +1,6 @@
 package com.kodilla.testing.shape;
 import org.junit.*;
-import  com.kodilla.testing.com.kodilla.testing.shape.*;
+import  com.kodilla.testing.shape.*;
 
 public class ShapeCollectorTestSuite {
     private static int testCounter = 0;
