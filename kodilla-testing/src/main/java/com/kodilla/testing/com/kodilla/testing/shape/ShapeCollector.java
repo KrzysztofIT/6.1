@@ -1,35 +1,24 @@
 package com.kodilla.testing.com.kodilla.testing.shape;
 
-interface Shape{
-    public String getShapeName();
-    public double getField();
+import java.util.ArrayList;
 
-}
-class Square implements Shape {
-    public String getShapeName(){
-        return null;
+public class ShapeCollector {
+    ArrayList<Shape> list = new ArrayList<>();
+    public void addFigure(Shape shape){
+        list.add(shape);
     }
-    public double getField(){
-        return 0 ;
+    public void removeFigure(int n){
+        list.remove(n);
     }
-}
-
-class Triangle implements Shape {
-    public String getShapeName(){
-        return null;
+    public Shape getFigure(int n){
+        return list.get(n);
     }
-    public double getField(){
-        return 0 ;
+    public ArrayList<Shape> getColl(){
+        return list;
     }
-}
-
-class Circle implements Shape {
-    public String getShapeName(){
-        return null;
+    public void showFigures(){
+        for(Shape shape: list){
+            System.out.println(shape.getShapeName());
+        }
     }
-    public double getField(){
-        return 0 ;
-    }
-}
-public class shapes {
 }

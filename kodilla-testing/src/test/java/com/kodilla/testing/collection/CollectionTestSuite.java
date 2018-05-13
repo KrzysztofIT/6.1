@@ -24,14 +24,14 @@ public class CollectionTestSuite {
     @Test
     public void testCaseEmptyArray(){
         //Given
-        ArrayList<Integer> tmp = null;
+        ArrayList<Integer> tmp = new ArrayList<>();
 
         OddNumbersExterminator test1 = new OddNumbersExterminator();
         //When
-        ArrayList<Integer> result = test1.exterminate(null);
+        ArrayList<Integer> result = test1.exterminate(tmp);
         System.out.println("Testing " + result);
         //Then
-        Assert.assertEquals(null, result);
+        Assert.assertEquals(tmp, result);
     }
     @Test
     public void testCaseFullArray(){
