@@ -27,7 +27,7 @@ public class WorldTestSuite {
         world.addItem(America);
 
         //When
-        BigDecimal totalPeopleQuantity = world.continents.stream()
+        BigDecimal totalPeopleQuantity = world.getContinents().stream()
                 .flatMap(s -> s.getCountries().stream())
                 .map(Country::getPeopleQuantity)
                 .reduce(BigDecimal.ZERO, (sum, current) -> sum = sum.add(current));

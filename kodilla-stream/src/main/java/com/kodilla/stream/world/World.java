@@ -5,10 +5,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class World {
-    List<Continent> continents = new ArrayList<>();
+    private List<Continent> continents = new ArrayList<>();
 
     public void addItem(Continent item) {
         continents.add(item);
+    }
+
+    public List<Continent> getContinents() {
+        return continents;
     }
 
     public boolean removeItem(Continent item) {
