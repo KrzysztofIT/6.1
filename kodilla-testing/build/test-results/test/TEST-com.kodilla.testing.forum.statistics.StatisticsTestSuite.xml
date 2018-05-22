@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.testing.forum.statistics.StatisticsTestSuite" tests="14" skipped="0" failures="0" errors="0" timestamp="2018-05-20T13:32:04" hostname="DESKTOP-0RN97J4" time="0.15">
+<testsuite name="com.kodilla.testing.forum.statistics.StatisticsTestSuite" tests="14" skipped="0" failures="0" errors="0" timestamp="2018-05-22T18:05:03" hostname="DESKTOP-0RN97J4" time="0.137">
   <properties/>
-  <testcase name="test_avgPostsPerUser_1" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.14"/>
-  <testcase name="test_avgPostsPerUser_2" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.001"/>
-  <testcase name="test_avgPostsPerUser_3" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.001"/>
+  <testcase name="test_avgPostsPerUser_1" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.126"/>
+  <testcase name="test_avgPostsPerUser_2" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.0"/>
+  <testcase name="test_avgPostsPerUser_3" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.0"/>
   <testcase name="test_avgPostsPerUser_4" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.0"/>
   <testcase name="test_avgPostsPerUser_5" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.0"/>
-  <testcase name="test_avgCommentsPerPost_1" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.001"/>
-  <testcase name="test_avgCommentsPerPost_2" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.001"/>
+  <testcase name="test_avgCommentsPerPost_1" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.0"/>
+  <testcase name="test_avgCommentsPerPost_2" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.0"/>
   <testcase name="test_avgCommentsPerPost_3" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.0"/>
   <testcase name="test_avgCommentsPerPost_4" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.0"/>
-  <testcase name="test_avgCommentsPerUser_1" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.001"/>
+  <testcase name="test_avgCommentsPerUser_1" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.0"/>
   <testcase name="test_avgCommentsPerUser_2" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.001"/>
   <testcase name="test_avgCommentsPerUser_3" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.001"/>
-  <testcase name="test_avgCommentsPerUser_4" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.001"/>
+  <testcase name="test_avgCommentsPerUser_4" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.0"/>
   <testcase name="test_avgCommentsPerUser_5" classname="com.kodilla.testing.forum.statistics.StatisticsTestSuite" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
