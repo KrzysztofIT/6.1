@@ -3,7 +3,9 @@ package com.kodilla.stream.portfolio;
 import org.junit.Assert;
 import org.junit.Test;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.Period;
+import java.time.temporal.ChronoUnit;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -149,7 +151,7 @@ public class BoardTestSuite {
         double sumTasks = project.getTaskLists().stream()
                 .filter(inProgressTasks::contains)
                 .flatMap( n -> n.getTasks().stream())
-                .map( n -> Period.between(n.getCreated(),LocalDate.now()).getDays())
+                .map( n -> ChronoUnit.DAYS.between(n.getCreated(),LocalDateTime.now()))
                 .mapToDouble( n -> n.doubleValue())
                 .average()
                 .getAsDouble()
