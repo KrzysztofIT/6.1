@@ -14,8 +14,7 @@ public class CalculatorTestSuite {
     @Test
     public void testCalculations() {
         //Given
-        ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring.forum") ;
-
+        ApplicationContext context = new AnnotationConfigApplicationContext("com.kodilla.spring") ;
         Calculator calculator = context.getBean(Calculator.class);
 
         //When
@@ -24,11 +23,10 @@ public class CalculatorTestSuite {
         double mul = calculator.mul(5,4);
         double div = calculator.div(5,4);
 
-
-        //String userName = forumUser.getUsername();
-
         //Then
-        //Assert.assertEquals(90 , add);
-        //Assert.assertEquals( "John Smith",  userName);
+        Assert.assertEquals(9 , add,0D);
+        Assert.assertEquals(1 , sub,0D);
+        Assert.assertEquals(20 , mul,0D);
+        Assert.assertEquals(1.25 , div,0D);
     }
 }
