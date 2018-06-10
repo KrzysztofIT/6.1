@@ -9,13 +9,15 @@ import org.springframework.context.annotation.Scope;
 
 public class BoardConfig {
 
-
+    @Autowired
     @Qualifier("tasklist1")
     TaskList toDo;
 
+    @Autowired
     @Qualifier("tasklist2")
     TaskList inProgress;
 
+    @Autowired
     @Qualifier("tasklist3")
     TaskList done;
 
