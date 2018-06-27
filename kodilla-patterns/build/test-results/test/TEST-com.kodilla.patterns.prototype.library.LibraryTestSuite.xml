@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.patterns.prototype.library.LibraryTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-06-27T17:42:45" hostname="DESKTOP-0RN97J4" time="0.01">
+  <properties/>
+  <testcase name="testGetBooks" classname="com.kodilla.patterns.prototype.library.LibraryTestSuite" time="0.01"/>
+  <system-out><![CDATA[Library 1
+Book{title='book 1', author='John', publicationDate=2000-01-10}
+Project number 2
+Book{title='book 1', author='John', publicationDate=2000-01-10}
+Project number 3
+Book{title='book 1', author='John', publicationDate=2000-01-10}
+Book{title='book 2', author='Mary', publicationDate=2010-05-03}
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
