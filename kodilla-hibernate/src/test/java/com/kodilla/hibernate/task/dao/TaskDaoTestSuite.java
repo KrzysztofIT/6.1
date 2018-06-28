@@ -23,10 +23,11 @@ public class TaskDaoTestSuite {
 
         //Then
         int id = task.getId();
-        Task readTask = taskDao.findOne(id);
+        Task readTask = taskDao.findById(id).orElse(null);
+        System.out.println(readTask.getId());
         Assert.assertEquals(id, readTask.getId());
 
         //CleanUp
-        taskDao.delete(id);
+        taskDao.deleteById(id);
     }
 }
