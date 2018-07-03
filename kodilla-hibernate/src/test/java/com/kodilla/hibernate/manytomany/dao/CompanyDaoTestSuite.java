@@ -104,13 +104,13 @@ public class CompanyDaoTestSuite {
             Assert.assertEquals(1, companiesWithNameLike.size());
         } finally {
             //CleanUp
-
+/*
             employeeDao.deleteById(employee1Id);
             employeeDao.deleteById(employee2Id);
+            */
 
             companyDao.deleteById(company1Id);
             companyDao.deleteById(company2Id);
-
 
 
         }
