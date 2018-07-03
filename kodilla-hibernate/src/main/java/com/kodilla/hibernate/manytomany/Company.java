@@ -5,6 +5,12 @@ import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
+
+@NamedNativeQuery(
+        name = "Company.retrieveCompaniesWithNameLike",
+        query = "FROM Company WHERE substr(name,1,3) = :COMPANYNAME"
+)
+
 @Entity
 @Table(name = "COMPANIES")
 public class Company {

@@ -9,6 +9,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import java.util.List;
+
 @RunWith(SpringRunner.class)
 @SpringBootTest
 public class CompanyDaoTestSuite {
@@ -60,4 +62,44 @@ public class CompanyDaoTestSuite {
         //    //do nothing
         //}
     }
+
+    @Test
+    public void testNamedQueries() {
+        //Given
+        Employee employee1 = new Employee("Jan", "Kowalski");
+        Employee employee2 = new Employee("Maria", "Nowak");
+
+        Company company1 = new Company("Apple");
+        Company company2 = new Company("Samsung");
+
+        employee1.getCompanies().add(company1);
+        employee2.getCompanies().add(company2);
+
+        company1.getEmployees().add(employee1);
+        company2.getEmployees().add(employee2);
+
+
+        companyDao.save(company1);
+        int company1Id = company1.getId();
+        companyDao.save(company2);
+        int company2Id = company2.getId();
+
+        //When
+        //List<Employee> employeesWithLastnameEqual = companyDao.retrieveEmployeesWithLastnameEqual("Kowalski");
+        List<Company> companiesWithNameLike = companyDao.retrieveCompaniesWithNameLike("Sam");
+
+        //Then
+/*
+        try {
+            Assert.assertEquals(1, employeesWithLastnameEqual.size());
+            Assert.assertEquals(3, companiesWithNameLike.size());
+        } finally {
+            //CleanUp
+            companyDao.deleteById(company1Id);
+            companyDao.deleteById(company2Id);
+        }
+*/
+
+    }
+
 }
