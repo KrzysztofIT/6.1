@@ -33,6 +33,8 @@ public class InvoiceDaoTestSuite {
         item1.setInvoice(invoice);
         item2.setInvoice(invoice);
 
+        product.getItems().add(item1);
+        product.getItems().add(item2);
         System.out.println(item1.getValue());
         System.out.println(item1 == null);
         System.out.println(invoice.getItems() == null);
