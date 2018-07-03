@@ -107,11 +107,11 @@ public class CompanyDaoTestSuite {
 /*
             employeeDao.deleteById(employee1Id);
             employeeDao.deleteById(employee2Id);
-            */
 
-            companyDao.deleteById(company1Id);
+
+            companyDao(company1Id);
             companyDao.deleteById(company2Id);
-
+*/
 
         }
 
