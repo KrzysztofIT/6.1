@@ -102,10 +102,8 @@ public class CompanyDaoTestSuite {
 
         //Then
 
-        try {
             Assert.assertEquals(1, employeesWithLastnameEqual.size());
             Assert.assertEquals(1, companiesWithNameLike.size());
-        } finally {
             //CleanUp
 /*
             employeeDao.deleteById(employee1Id);
@@ -116,7 +114,7 @@ public class CompanyDaoTestSuite {
             companyDao.deleteById(company2Id);
 */
 
-        }
+
 
 
     }

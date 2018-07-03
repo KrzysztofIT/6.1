@@ -10,7 +10,7 @@ import javax.transaction.Transactional;
 import java.util.List;
 
 
-@Transactional
+//@Transactional
 @Repository
 public interface EmployeeDao extends CrudRepository<Employee, Integer> {
 
