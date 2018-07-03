@@ -18,7 +18,8 @@ import java.util.List;
 public class CompanyDaoTestSuite {
     @Autowired
     CompanyDao companyDao;
-
+    @Autowired
+    EmployeeDao employeeDao;
     @Test
     public void testSaveManyToMany(){
         //Given
@@ -86,21 +87,34 @@ public class CompanyDaoTestSuite {
         companyDao.save(company2);
         int company2Id = company2.getId();
 
+        employeeDao.save(employee1);
+        int employee1Id = employee1.getId();
+        employeeDao.save(employee2);
+        int employee2Id = employee2.getId();
+
+
         //When
-        List<Employee> employeesWithLastnameEqual = companyDao.retrieveEmployeesWithLastnameEqual("Kowalski");
+        List<Employee> employeesWithLastnameEqual = employeeDao.retrieveEmployeesWithLastnameEqual("Kowalski");
         List<Company> companiesWithNameLike = companyDao.retrieveCompaniesWithNameLike("Sam");
 
         //Then
-/*
+
         try {
             Assert.assertEquals(1, employeesWithLastnameEqual.size());
-            Assert.assertEquals(3, companiesWithNameLike.size());
+            Assert.assertEquals(1, companiesWithNameLike.size());
         } finally {
             //CleanUp
+
+            employeeDao.deleteById(employee1Id);
+            employeeDao.deleteById(employee2Id);
+
             companyDao.deleteById(company1Id);
             companyDao.deleteById(company2Id);
+
+
+
         }
-*/
+
 
     }
 
