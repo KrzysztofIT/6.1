@@ -87,7 +87,7 @@ public class CompanyDaoTestSuite {
         int company2Id = company2.getId();
 
         //When
-        //List<Employee> employeesWithLastnameEqual = companyDao.retrieveEmployeesWithLastnameEqual("Kowalski");
+        List<Employee> employeesWithLastnameEqual = companyDao.retrieveEmployeesWithLastnameEqual("Kowalski");
         List<Company> companiesWithNameLike = companyDao.retrieveCompaniesWithNameLike("Sam");
 
         //Then

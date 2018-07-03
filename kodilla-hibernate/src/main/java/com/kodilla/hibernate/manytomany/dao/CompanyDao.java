@@ -12,10 +12,10 @@ import java.util.List;
 @Transactional
 @Repository
 public interface CompanyDao extends CrudRepository<Company, Integer> {
-/*
+
     @Query
     List<Employee> retrieveEmployeesWithLastnameEqual(@Param("LASTNAME") String lastname);
-*/
+
     @Query(nativeQuery = true)
     List<Company> retrieveCompaniesWithNameLike(@Param("COMPANYNAME") String companyname);
 
