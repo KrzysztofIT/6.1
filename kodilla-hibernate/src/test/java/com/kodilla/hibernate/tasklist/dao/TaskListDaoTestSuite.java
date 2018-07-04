@@ -10,11 +10,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import javax.transaction.Transactional;
 import java.math.BigDecimal;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
+@Transactional
 public class TaskListDaoTestSuite {
     @Autowired
     private TaskListDao taskListDao;
@@ -37,7 +39,7 @@ public class TaskListDaoTestSuite {
 
         //Cleanup
         int id = readTaskList.get(0).getId();
-        taskListDao.deleteById(id);
+        //taskListDao.deleteById(id);
     }
     @Test
     public void testTaskListDaoSaveWithTasks() {

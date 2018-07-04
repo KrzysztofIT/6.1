@@ -21,7 +21,7 @@ public class CompanyDaoTestSuite {
     @Autowired
     EmployeeDao employeeDao;
 
-    @Transactional
+    //@Transactional
     @Test
     public void testSaveManyToMany(){
         //Given
@@ -68,7 +68,7 @@ public class CompanyDaoTestSuite {
         //}
     }
 
-    @Transactional
+    //@Transactional
     @Test
     public void testNamedQueries() {
         //Given

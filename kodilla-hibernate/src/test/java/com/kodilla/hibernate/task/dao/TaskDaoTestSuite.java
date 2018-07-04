@@ -9,11 +9,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
+import javax.transaction.Transactional;
 import java.math.BigDecimal;
 import java.util.List;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
+@Transactional
 public class TaskDaoTestSuite {
     @Autowired
     private TaskDao taskDao;
@@ -29,12 +31,13 @@ public class TaskDaoTestSuite {
 
         //Then
         int id = task.getId();
-        Task readTask = taskDao.findById(id).orElse(null);
+        Task readTask = taskDao.findOne(id);
+        //Task readTask = taskDao.findById(id).orElse(null);
         //System.out.println(readTask.getId());
         Assert.assertEquals(id, readTask.getId());
 
         //CleanUp
-        taskDao.deleteById(id);
+        //taskDao.deleteById(id);
     }
     @Test
     public void testTaskDaoFindByDuration() {
@@ -51,7 +54,7 @@ public class TaskDaoTestSuite {
 
         //CleanUp
         int id = readTasks.get(0).getId();
-        taskDao.deleteById(id);
+        //taskDao.deleteById(id);
     }
     @Test
     public void testTaskDaoSaveWithFinancialDetails() {
@@ -67,6 +70,6 @@ public class TaskDaoTestSuite {
         Assert.assertNotEquals(0, id);
 
         //CleanUp
-        taskDao.deleteById(id);
+        //taskDao.deleteById(id);
     }
 }
