@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.patterns.builder.checkers.CheckersTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-06-27T17:42:45" hostname="DESKTOP-0RN97J4" time="0.008">
+<testsuite name="com.kodilla.patterns.builder.checkers.CheckersTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-07-08T16:14:13" hostname="DESKTOP-0RN97J4" time="0.006">
   <properties/>
-  <testcase name="testCheckersBuilder" classname="com.kodilla.patterns.builder.checkers.CheckersTestSuite" time="0.008"/>
+  <testcase name="testCheckersBuilder" classname="com.kodilla.patterns.builder.checkers.CheckersTestSuite" time="0.006"/>
   <system-out><![CDATA[|  |  |wQ|wP|  |  |  |  |  |  |
 |  |  |  |  |  |  |  |  |  |  |
 |  |  |  |  |  |  |  |  |  |  |

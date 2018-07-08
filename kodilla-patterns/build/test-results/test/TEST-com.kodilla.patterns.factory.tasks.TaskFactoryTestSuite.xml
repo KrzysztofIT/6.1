@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.patterns.factory.tasks.TaskFactoryTestSuite" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-06-27T17:42:45" hostname="DESKTOP-0RN97J4" time="0.007">
+<testsuite name="com.kodilla.patterns.factory.tasks.TaskFactoryTestSuite" tests="3" skipped="0" failures="0" errors="0" timestamp="2018-07-08T16:14:13" hostname="DESKTOP-0RN97J4" time="0.004">
   <properties/>
-  <testcase name="testFactoryPainting" classname="com.kodilla.patterns.factory.tasks.TaskFactoryTestSuite" time="0.003"/>
+  <testcase name="testFactoryPainting" classname="com.kodilla.patterns.factory.tasks.TaskFactoryTestSuite" time="0.002"/>
   <testcase name="testFactoryDriving" classname="com.kodilla.patterns.factory.tasks.TaskFactoryTestSuite" time="0.001"/>
-  <testcase name="testFactoryShopping" classname="com.kodilla.patterns.factory.tasks.TaskFactoryTestSuite" time="0.001"/>
+  <testcase name="testFactoryShopping" classname="com.kodilla.patterns.factory.tasks.TaskFactoryTestSuite" time="0.0"/>
   <system-out><![CDATA[Execute Painting Task with Painting List
 Execute Shopping Task with Drift List
 Execute Shopping Task with Food List
