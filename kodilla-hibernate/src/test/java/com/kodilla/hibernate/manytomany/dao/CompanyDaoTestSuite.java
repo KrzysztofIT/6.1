@@ -100,12 +100,15 @@ public class CompanyDaoTestSuite {
         //When
         List<Employee> employeesWithLastnameEqual = employeeDao.retrieveEmployeesWithLastnameEqual("Kowalski");
         List<Company> companiesWithNameLike = companyDao.retrieveCompaniesWithNameLike("Sam");
+        List<Company> companiesWithNameLike2 = companyDao.retrieveCompaniesWithNameLike2("%Sam%");
 
         //Then
 
             Assert.assertEquals(1, employeesWithLastnameEqual.size());
             Assert.assertEquals(1, companiesWithNameLike.size());
-            //CleanUp
+            Assert.assertEquals(1, companiesWithNameLike2.size());
+
+        //CleanUp
 /*
             employeeDao.deleteById(employee1Id);
             employeeDao.deleteById(employee2Id);

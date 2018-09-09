@@ -5,12 +5,26 @@ import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/*
 @NamedNativeQuery(
         name = "Company.retrieveCompaniesWithNameLike",
         query = "SELECT * FROM COMPANIES WHERE substr(company_name,1,3) = :COMPANYNAME",
         resultClass = Company.class
 )
+*/
+@NamedNativeQueries({
+        @NamedNativeQuery(name = "Company.retrieveCompaniesWithNameLike", query = "SELECT * FROM COMPANIES WHERE substr(company_name,1,3) = :COMPANYNAME",resultClass = Company.class),
+        @NamedNativeQuery(name = "Company.retrieveCompaniesWithNameLike2", query = "SELECT * FROM COMPANIES WHERE company_name like :COMPANYNAME",resultClass = Company.class)
+})
+
+/*
+@NamedNativeQuery(
+        name = "Company.retrieveCompaniesWithNameLike2",
+        query = "SELECT * FROM COMPANIES WHERE company_name like :COMPANYNAME",
+        resultClass = Company.class
+)
+*/
+
 
 @Entity
 @Table(name = "COMPANIES")
