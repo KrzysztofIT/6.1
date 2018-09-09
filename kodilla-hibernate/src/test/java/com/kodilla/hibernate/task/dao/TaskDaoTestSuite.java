@@ -23,6 +23,7 @@ public class TaskDaoTestSuite {
 
     @Test
     public void testTaskDaoSave() {
+        /*
         //Given
         Task task = new Task(DESCRIPTION, 7);
 
@@ -38,9 +39,11 @@ public class TaskDaoTestSuite {
 
         //CleanUp
         //taskDao.deleteById(id);
+        */
     }
     @Test
     public void testTaskDaoFindByDuration() {
+        /*
         //Given
         Task task = new Task(DESCRIPTION, 7);
         taskDao.save(task);
@@ -55,10 +58,13 @@ public class TaskDaoTestSuite {
         //CleanUp
         int id = readTasks.get(0).getId();
         //taskDao.deleteById(id);
+        */
     }
     @Test
     public void testTaskDaoSaveWithFinancialDetails() {
+        /*
         //Given
+
         Task task = new Task(DESCRIPTION, 30);
         task.setTaskFinancialDetails(new TaskFinancialDetails(new BigDecimal(120), false));
 
@@ -71,5 +77,6 @@ public class TaskDaoTestSuite {
 
         //CleanUp
         //taskDao.deleteById(id);
+        */
     }
 }

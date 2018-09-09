@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.patterns.prototype.BoardTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-07-08T16:14:13" hostname="DESKTOP-0RN97J4" time="0.013">
+<testsuite name="com.kodilla.patterns.prototype.BoardTestSuite" tests="1" skipped="0" failures="0" errors="0" timestamp="2018-09-09T17:47:11" hostname="DESKTOP-0RN97J4" time="0.016">
   <properties/>
-  <testcase name="testToString" classname="com.kodilla.patterns.prototype.BoardTestSuite" time="0.013"/>
+  <testcase name="testToString" classname="com.kodilla.patterns.prototype.BoardTestSuite" time="0.016"/>
   <system-out><![CDATA[Board [Project number 1]
    List [In Progress Tasks]
       Task [In Progress Task number 1]
@@ -51,17 +51,6 @@ Board [Project number 2]
       Task [Done Task number 10]
 
 Board [Project number 3]
-   List [Done Tasks]
-      Task [Done Task number 1]
-      Task [Done Task number 2]
-      Task [Done Task number 3]
-      Task [Done Task number 4]
-      Task [Done Task number 5]
-      Task [Done Task number 6]
-      Task [Done Task number 7]
-      Task [Done Task number 8]
-      Task [Done Task number 9]
-      Task [Done Task number 10]
    List [In Progress Tasks]
       Task [In Progress Task number 1]
       Task [In Progress Task number 2]
@@ -84,6 +73,17 @@ Board [Project number 3]
       Task [To Do Task number 8]
       Task [To Do Task number 9]
       Task [To Do Task number 10]
+   List [Done Tasks]
+      Task [Done Task number 1]
+      Task [Done Task number 2]
+      Task [Done Task number 3]
+      Task [Done Task number 4]
+      Task [Done Task number 5]
+      Task [Done Task number 6]
+      Task [Done Task number 7]
+      Task [Done Task number 8]
+      Task [Done Task number 9]
+      Task [Done Task number 10]
 
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" tests="10" skipped="0" failures="0" errors="0" timestamp="2018-09-09T18:45:51" hostname="DESKTOP-0RN97J4" time="0.012">
+  <properties/>
+  <testcase name="testStandardDoughPizzaGetCost" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.002"/>
+  <testcase name="testMushroomsPizzaGetCost" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.001"/>
+  <testcase name="testBasicPizzaGetDescription" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.001"/>
+  <testcase name="testDoubleDoughPizzaGetDescription" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.001"/>
+  <testcase name="testSalamiPizzaGetCost" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.001"/>
+  <testcase name="testBasicPizzaGetCost" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.0"/>
+  <testcase name="testMushroomsPizzaGetDescription" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.0"/>
+  <testcase name="testSalamiPizzaGetDescription" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.0"/>
+  <testcase name="testDoubleDoughPizzaGetCost" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.0"/>
+  <testcase name="testStandardDoughPizzaGetDescription" classname="com.kodilla.patterns2.decorator.pizza.PizzaOrderTestSuite" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

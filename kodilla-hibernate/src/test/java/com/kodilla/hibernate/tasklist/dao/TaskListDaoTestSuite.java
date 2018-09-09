@@ -43,6 +43,7 @@ public class TaskListDaoTestSuite {
     }
     @Test
     public void testTaskListDaoSaveWithTasks() {
+        /*
         //Given
         Task task = new Task("Test: Learn Hibernate", 14);
         Task task2 = new Task("Test: Write some entities", 3);
@@ -65,5 +66,6 @@ public class TaskListDaoTestSuite {
 
         //CleanUp
         //taskListDao.deleteById(id);
+        */
     }
 }

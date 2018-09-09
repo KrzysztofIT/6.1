@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.kodilla.spring.intro.shape.DrawerTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-07-08T16:14:22" hostname="DESKTOP-0RN97J4" time="0.005">
+<testsuite name="com.kodilla.spring.intro.shape.DrawerTestSuite" tests="2" skipped="0" failures="0" errors="0" timestamp="2018-09-09T17:47:27" hostname="DESKTOP-0RN97J4" time="0.005">
   <properties/>
-  <testcase name="testDoDrawingWithTriangle" classname="com.kodilla.spring.intro.shape.DrawerTestSuite" time="0.003"/>
+  <testcase name="testDoDrawingWithTriangle" classname="com.kodilla.spring.intro.shape.DrawerTestSuite" time="0.004"/>
   <testcase name="testDoDrawingWithCircle" classname="com.kodilla.spring.intro.shape.DrawerTestSuite" time="0.001"/>
   <system-out><![CDATA[This is a triangle
 This is a circle
