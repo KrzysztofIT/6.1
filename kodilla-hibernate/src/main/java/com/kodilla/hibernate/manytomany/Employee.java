@@ -5,10 +5,18 @@ import javax.validation.constraints.NotNull;
 import java.util.ArrayList;
 import java.util.List;
 
+
 @NamedQuery(
         name = "Employee.retrieveEmployeesWithLastnameEqual",
         query = "FROM Employee WHERE lastname = :LASTNAME"
 )
+
+
+@NamedNativeQueries({
+        //@NamedNativeQuery(name = "Employee.retrieveEmployeesWithLastnameEqual", query = "SELECT * FROM Employee WHERE lastname = :LASTNAME"   ,resultClass = Employee.class),
+        @NamedNativeQuery(name = "Employee.retrieveEmployeesWithNameLike"     , query = "SELECT * FROM EMPLOYEES WHERE lastname like :LASTNAME",resultClass = Employee.class)
+})
+
 
 @Entity
 @Table(name = "EMPLOYEES")

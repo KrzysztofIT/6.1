@@ -14,7 +14,8 @@ import java.math.BigDecimal;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(classes = Calculator.class)
+//@SpringBootTest(classes = Calculator.class)
+@SpringBootTest
 public class CalculatorTestSuite {
     @Autowired
     private Calculator calculator;
