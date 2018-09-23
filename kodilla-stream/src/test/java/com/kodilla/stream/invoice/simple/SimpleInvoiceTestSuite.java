@@ -14,5 +14,8 @@ public class SimpleInvoiceTestSuite {
         invoice.addItem(new SimpleItem(new SimpleProduct("Product 3",  6.49), 5.0));
         //Then
         Assert.assertEquals(108.975, invoice.getValueToPay(), 0.001);
+        //invoice.items.stream().filter(n -> n.product.productName =="Product 2")  ).collect(Collectors.toList()).contains("Product 2")
+        //invoice.items.stream().filter(n -> n.product.productName =="Product 2").collect(Collectors.toList()).size() == 1
+
     }
 }

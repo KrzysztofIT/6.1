@@ -16,7 +16,8 @@ public final class SimpleInvoice {
     }
 
     public double getValueToPay() {
-        return items.stream()
-                .collect(Collectors.summingDouble(SimpleItem::getValue));
+        //System.out.println(items.stream().map(n -> n.getProduct().getProductName()).collect(Collectors.toList()).contains("Product 2"));
+        //items.stream().map(n -> n.getProduct().getProductName()).collect(Collectors.toList()).contains("Product 2");
+        return items.stream().collect(Collectors.summingDouble(SimpleItem::getValue));
     }
 }
